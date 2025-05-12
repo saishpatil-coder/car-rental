@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import vehicles from '../assets/VehicleInfo';
 import VehicleCard from './CommonVehicleCard';
 
@@ -43,8 +43,13 @@ export default function Car()
     return (
         <section
             className="mt-5 py-5"
-            style={{ fontFamily: 'Merriweather, serif', borderRadius: '1.2rem' }}
+            style={{
+                fontFamily: 'Merriweather, serif',
+                borderRadius: '1.2rem',
+                background: 'linear-gradient(to right,rgb(177, 196, 234),rgb(77, 103, 218))', // light grey to soft blue
+            }}
         >
+    
             <div className="container">
                 {/* Filter Section */}
                 <div className="mb-4 p-4 bg-white rounded shadow">

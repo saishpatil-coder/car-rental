@@ -38,8 +38,12 @@ export default function Bike()
 
     return (
         <section
-            className="py-5 mt-5"
-            style={{ fontFamily: 'Merriweather, serif' }}
+            className="mt-5 py-5"
+            style={{
+                fontFamily: 'Merriweather, serif',
+                borderRadius: '1.2rem',
+                background: 'linear-gradient(to right,rgb(177, 196, 234),rgb(77, 103, 218))', // light grey to soft blue
+            }}
         >
             <div className="container">
                 {/* Filter Section */}

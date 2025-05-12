@@ -14,7 +14,7 @@ export default function VehicleCard({ vehicle })
             style={{
                 width: '260px',
                 borderRadius: '1.25rem',
-                background: 'rgba(240, 255, 255, 0.65)',
+                background: 'rgba(163, 244, 244, 0.65)',
                 backdropFilter: 'blur(8px)',
                 boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
                 border: '1px solid rgba(255, 255, 255, 0.4)',
