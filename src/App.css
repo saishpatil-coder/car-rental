@@ -1,0 +1,453 @@
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  /* Semi-transparent white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+  margin: 10px;
+  /* Margin from top, left, right */
+  border-radius: 10px;
+  /* Rounded corners */
+  padding: 12px 0;
+  /* Vertical padding */
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar:hover {
+  background-color: rgba(255, 255, 255, 0.98);
+  /* Slightly less transparent on hover */
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  /* For Bootstrap Icon */
+  color: #00CED1;
+  /* Teal */
+}
+
+.navbar-brand-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1C2526;
+  /* Dark navy */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #1C2526;
+  /* Dark navy */
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00CED1;
+  /* Teal on hover */
+  background-color: rgba(0, 206, 209, 0.1);
+  /* Light teal background */
+  transform: translateY(-2px);
+}
+
+.nav-link i {
+  font-size: 1rem;
+}
+
+/* Hero Container and Carousel Styles */
+.hero-container {
+  background-color: #6c757d;
+  /* Black background for padding area */
+}
+
+.hero-bg {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* Offset for navbar height */
+}
+
+.hero-slide {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  /* Adjust based on image aspect ratio */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 37, 38, 0.6);
+  /* Dark navy overlay */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #00CED1;
+  /* Teal */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-tagline {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  /* White */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-hero {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-color: #00CED1;
+  /* Teal */
+  border-color: #00CED1;
+  color: #1C2526;
+  /* Dark navy */
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: #00B7B3;
+  /* Darker teal */
+  border-color: #00B7B3;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand-text {
+    font-size: 1.4rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.4rem;
+    /* For Bootstrap Icon */
+    width: 30px;
+    /* For custom image */
+    height: 30px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
+  .custom-navbar {
+    margin: 5px;
+    /* Smaller margin on mobile */
+    padding: 8px 0;
+  }
+
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .btn-hero {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .hero-slide {
+    aspect-ratio: 4 / 3;
+    /* Slightly taller on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-slide {
+    max-height: 80vh;
+    /* Limit height on larger screens */
+  }
+}
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  /* Semi-transparent white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+  margin: 10px;
+  /* Margin from top, left, right */
+  border-radius: 10px;
+  /* Rounded corners */
+  padding: 12px 0;
+  /* Vertical padding */
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar:hover {
+  background-color: rgba(255, 255, 255, 0.98);
+  /* Slightly less transparent on hover */
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  /* For Bootstrap Icon */
+  color: #00CED1;
+  /* Teal */
+}
+
+.navbar-brand-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1C2526;
+  /* Dark navy */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #1C2526;
+  /* Dark navy */
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00CED1;
+  /* Teal on hover */
+  background-color: rgba(0, 206, 209, 0.1);
+  /* Light teal background */
+  transform: translateY(-2px);
+}
+
+.nav-link i {
+  font-size: 1rem;
+}
+
+/* Hero Carousel Styles */
+.hero-bg {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* Offset for navbar height */
+}
+
+.hero-slide {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  /* Adjust based on image aspect ratio */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 37, 38, 0.6);
+  /* Dark navy overlay */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #00CED1;
+  /* Teal */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-tagline {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  /* White */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-hero {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-color: #00CED1;
+  /* Teal */
+  border-color: #00CED1;
+  color: #1C2526;
+  /* Dark navy */
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: #00B7B3;
+  /* Darker teal */
+  border-color: #00B7B3;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand-text {
+    font-size: 1.4rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.4rem;
+    /* For Bootstrap Icon */
+    width: 30px;
+    /* For custom image */
+    height: 30px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
+  .custom-navbar {
+    margin: 5px;
+    padding: 8px 0;
+  }
+
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .btn-hero {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .hero-slide {
+    aspect-ratio: 4 / 3;
+    /* Slightly taller on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-slide {
+    max-height: 80vh;
+    /* Limit height on larger screens */
+  }
+}
+@media (max-width: 576px) {
+  .stat-card {
+    padding: 0.75rem !important;
+  }
+
+  .stat-card i {
+    font-size: 1.2rem !important;
+  }
+
+  .stat-card .fs-4 {
+    font-size: 1.2rem !important;
+  }
+
+  .stat-card p {
+    font-size: 0.75rem !important;
+  }
+}
+
+/* Ensure smooth scrolling and hide scrollbars for aesthetics */
+.scroll-container {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scroll-behavior: smooth;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+/* Optional: Add snap scrolling for a better UX */
+.scroll-container {
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-container>div {
+  scroll-snap-align: start;
+}
+
+/* Ensure the container takes full width and cards are spaced */
+.scroll-container {
+  gap: 1rem;
+  /* Space between cards */
+  padding-bottom: 1rem;
+  /* Space for scrollbar if visible */
+}
+
+.scroll-container {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+.scroll-container>div {
+  scroll-snap-align: start;
+}
+
+.scroll-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container>div {
+  scroll-snap-align: start;
+}
