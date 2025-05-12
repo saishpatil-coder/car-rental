@@ -10,13 +10,34 @@ export default function VehicleCard({ vehicle })
     };
 
     return (
-        <div className="card shadow-sm border-0" style={{
-            width: '260px', borderRadius: '1rem', background: 'linear-gradient(135deg, #f8f9fa, rgb(222, 230, 226))',
-        }}>
+        <div className="card shadow-sm border-0"
+            style={{
+                width: '260px',
+                borderRadius: '1.25rem',
+                background: 'rgba(240, 255, 255, 0.65)',
+                backdropFilter: 'blur(8px)',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+                border: '1px solid rgba(255, 255, 255, 0.4)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+            }}
+            onMouseEnter={e =>
+            {
+                e.currentTarget.style.transform = 'scale(1.02)';
+                e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.15)';
+            }}
+            onMouseLeave={e =>
+            {
+                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+            }}
+        >
+      
+
             <div className="card-body p-3">
                 {/* Model Name */}
-                <p className=" mb-1" style={{ fontSize: '17px' , fontWeight:500 }}>
+                <p className=" mb-1" style={{ fontSize: '18px' , fontWeight:600 }}>
                     {vehicle.model}
+
                 </p>
             </div>
 

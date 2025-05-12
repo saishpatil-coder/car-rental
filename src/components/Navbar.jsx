@@ -12,9 +12,7 @@ export default function Navbar()
           .custom-navbar {
             background-color: rgba(255, 255, 255, 0.50); /* Highly transparent */
             transition: background-color 0.3s ease;
-            margin: 2px; /* Increased margin */
-            padding: 2px 0; /* Increased vertical padding */
-            border-radius: 0px; /* Keep no corners */
+            padding: 2px 0; 
           }
 
           .custom-navbar:hover {
@@ -34,8 +32,8 @@ export default function Navbar()
 
           .navbar-brand-text {
             font-family: 'Great Vibes', cursive;
-            font-size: 1.8rem; /* Increased font size */
-            font-weight: 400;
+            font-size: 2rem; /* Increased font size */
+            font-weight: 500;
             color: rgb(55, 8, 8); /* Navy */
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
           }
@@ -66,7 +64,7 @@ export default function Navbar()
 
           @media (max-width: 768px) {
             .navbar-brand-text {
-              font-size: 1.4rem; /* Increased mobile font size */
+              font-size: 1.6rem; /* Increased mobile font size */
             }
             .navbar-logo {
               width: 28px;
@@ -77,7 +75,7 @@ export default function Navbar()
               padding: 6px 8px;
             }
             .custom-navbar {
-              margin: 2px; /* Adjusted mobile margin */
+              margin: 10px; /* Adjusted mobile margin */
               padding: 8px 0; /* Adjusted mobile padding */
             }
               

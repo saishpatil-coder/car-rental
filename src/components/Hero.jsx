@@ -9,8 +9,8 @@ export default function Hero()
 
     return (
         <>
-        <style>
-          {`
+            <style>
+                {`
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@600;700&display=swap');
 
     .hero-section {
@@ -37,9 +37,39 @@ export default function Hero()
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     }
 
-    /* rest remains unchanged... */
+    .hero-tagline {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+    }
+
+    @media (max-width: 992px) {
+      .hero-title {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-slide {
+        height: 50vh;
+      }
+      .hero-title {
+        font-size: 2.25rem;
+      }
+      .hero-tagline {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 1.75rem;
+      }
+      .hero-tagline {
+        font-size: 0.9rem;
+      }
+    }
   `}
-        </style>
+            </style>
 
 
             <section id="home" className="hero-section">

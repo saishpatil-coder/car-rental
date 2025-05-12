@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import vehicles from '../assets/VehicleInfo';
 import VehicleCard from './VehicleCard';
@@ -19,6 +18,10 @@ export default function Vehicles()
         <section id="vehicles" className="py-5"
             style={{
                 background: 'linear-gradient(135deg, #f8f9fa, rgb(222, 230, 226))',
+                backgroundImage: `linear-gradient(rgba(10, 20, 40, 0.7), rgba(10, 20, 40, 0.85)),url('/sea.jpg')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                color:"white",
             }}
         >
             <div className="container">
